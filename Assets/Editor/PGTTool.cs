@@ -40,6 +40,12 @@ public class PGTTool : EditorWindow
             biomes = new List<Biome>();
         }
 
+        if (heightCurve == null)
+        {
+            heightCurve = new AnimationCurve();
+        }
+
+
         EditorGUILayout.LabelField("Procedural Terrain Generator", EditorStyles.boldLabel);
 
         Rect baseRect = EditorGUILayout.BeginVertical();
